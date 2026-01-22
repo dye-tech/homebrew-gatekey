@@ -1,25 +1,25 @@
 class GatekeyMeshGateway < Formula
     desc "GateKey mesh gateway"
     homepage "https://github.com/dye-tech/GateKey"
-    version "1.4.5"
+    version "1.4.6"
   
     on_macos do
       if Hardware::CPU.arm?
         url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-mesh-gateway-#{version}-darwin-arm64.tar.gz"
-        sha256 "90fe22da00b50bb2b381b39df4cfc09986e949c79f5779643ec69cd7c65a076c"
+        sha256 "abba4330e57438f260540c7fd48b9a374f5ea3af454d81aafb7be00b1e5d9e56"
       else
         url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-mesh-gateway-#{version}-darwin-amd64.tar.gz"
-        sha256 "3f1a383b2d17f6f192a050459627962c4de51111eaf80ac2d8eab46cc3919648"
+        sha256 "6652c1c897dd9405a37202ca9965fed588f8a613dfea581c97fcfe127a49ef38"
       end
     end
   
     on_linux do
       if Hardware::CPU.arm?
         url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-mesh-gateway-#{version}-linux-arm64.tar.gz"
-        sha256 "79e7c73bca2d99a097e18f01ba5c87ccab3769bd36942ba97f7a18480762af07"
+        sha256 "b3b41dd52061c133233c8601f57701ba2fe5523b4f21be9ac8f2b50e19aa07b4"
       else
         url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-mesh-gateway-#{version}-linux-amd64.tar.gz"
-        sha256 "8c1d0e5367a1f868d7d95d26d991d91b73885da6dbaaf096504928211619f957"
+        sha256 "da87942baf6668193e873bd9030f62f3e564bf139400b35cf25aeb965f9e46ac"
       end
     end
   

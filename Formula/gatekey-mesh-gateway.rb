@@ -1,7 +1,7 @@
 class GatekeyMeshGateway < Formula
   desc "GateKey mesh gateway component"
   homepage "https://github.com/dye-tech/GateKey"
-  version "1.5.2"
+  version "1.5.3"
 
   on_macos do
     if Hardware::CPU.arm?

@@ -1,7 +1,7 @@
 class GatekeyWireguardHub < Formula
   desc "GateKey WireGuard hub component"
   homepage "https://github.com/dye-tech/GateKey"
-  version "1.5.3"
+  version "1.5.4"
 
   on_macos do
     if Hardware::CPU.arm?

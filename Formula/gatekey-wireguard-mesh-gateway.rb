@@ -1,25 +1,25 @@
 class GatekeyWireguardMeshGateway < Formula
   desc "GateKey WireGuard mesh gateway component"
   homepage "https://github.com/dye-tech/GateKey"
-  version "1.7.2"
+  version "1.7.3"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-mesh-gateway-#{version}-darwin-arm64.tar.gz"
-      sha256 "70681e69cd755f972913643f0cfafbf154a199edfc3c353f319b1ebd597f58d0"
+      sha256 "45297014c65451fdb9389b33bbde5cdb02b760a8ed62289454fab2223360dba4"
     else
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-mesh-gateway-#{version}-darwin-amd64.tar.gz"
-      sha256 "78a3a1b19509ea1661d03d459ba29abf1e7fcb2519eaf74c3d549c7a6247bc8d"
+      sha256 "9586baa72f935d8b10d44088d16dbcd7a6219966b6d321cb208e04ea40e16c4b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-mesh-gateway-#{version}-linux-arm64.tar.gz"
-      sha256 "831ef7b05b3102e314f571f79ef4a41a9043cac17f82d08b4967eb7246bda55f"
+      sha256 "b7169006f39c990d7aa57bb4a8db9350fb1bd9db55ad6a77e375c4f9cb8caf67"
     else
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-mesh-gateway-#{version}-linux-amd64.tar.gz"
-      sha256 "f788e6feb61dc9ef7a8b0f3404571bb2d21e8300841e948d8ac5102201f448af"
+      sha256 "ab4433e00aba6f385727d956ba9fe4d2817dc96631cf03f2f45c5e6374e3b6d9"
     end
   end
 

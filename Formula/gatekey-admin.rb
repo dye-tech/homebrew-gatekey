@@ -1,25 +1,25 @@
 class GatekeyAdmin < Formula
   desc "GateKey admin CLI"
   homepage "https://github.com/dye-tech/GateKey"
-  version "1.10.0"
+  version "1.11.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-admin-#{version}-darwin-arm64.tar.gz"
-      sha256 "17b0288463fad4eef546f0c2d8225df4d321ac6eddb7307a21c320e04815666b"
+      sha256 "3404b4a65acd611fffbd14534bf3c09c389cea895e89e649a26637bb1d508987"
     else
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-admin-#{version}-darwin-amd64.tar.gz"
-      sha256 "94c98dded9e7c191146f9dad692aca760f8e6bc9d7f127f8ebac9c3003905946"
+      sha256 "a2d7977a6ae3492b67bc25e4d18d11d54d82d5529bbec908f7751ce156366d79"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-admin-#{version}-linux-arm64.tar.gz"
-      sha256 "89b246dec2592ff5af55bf713faeef8d9097c1d40e2a85910ad5ae6d039ff21c"
+      sha256 "d6abcd2c75571d22dd81447d379375ea3a58f51237af32ec9fdec30ea690228f"
     else
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-admin-#{version}-linux-amd64.tar.gz"
-      sha256 "a4a0aef6f7397f07db9dda22fe61af97a760d15987fbe43abec2fc742ab4e917"
+      sha256 "a76019e4b52776542f6ff5a6c292e39bce41c051a47b749bf126e5ae2580d837"
     end
   end
 

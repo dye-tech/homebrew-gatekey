@@ -1,25 +1,25 @@
 class GatekeyWireguardHub < Formula
   desc "GateKey WireGuard hub component"
   homepage "https://github.com/dye-tech/GateKey"
-  version "1.9.0"
+  version "1.10.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-hub-#{version}-darwin-arm64.tar.gz"
-      sha256 "85a684880e4638a1052469c5a587a3c9ac0b7ef88ee62ddc5fa6c8d47de72266"
+      sha256 "5b170d1afddb68385609a642e6b32c99e320c818e5a2b8e8b0666e3b7645f523"
     else
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-hub-#{version}-darwin-amd64.tar.gz"
-      sha256 "b06c87096fd360ceca8d7024e73708d7ee1d2e422445332b39a62455aec71d58"
+      sha256 "1485ec420f2a49cea1b2069f9b0cb99e90a0f54460aab674f2cbc6afaf69fde8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-hub-#{version}-linux-arm64.tar.gz"
-      sha256 "1bcdf4222c013ab4dfb450f715e13304624d123edf8f519b3ba69af2e44a059d"
+      sha256 "65cc8ffa23252fd9087f0034fac15c5cb4626768b8e381e5cdd08e48cef35e34"
     else
       url "https://github.com/dye-tech/GateKey/releases/download/v#{version}/gatekey-wireguard-hub-#{version}-linux-amd64.tar.gz"
-      sha256 "44bb7c5b7cf8963d878dfe394068f1efae8c7ae5c04a888acaf309151ffce796"
+      sha256 "d1d5e0d9affe7ef25218a0255b990540b950ed474b6bd49e3e2c854526b79fb7"
     end
   end
 
